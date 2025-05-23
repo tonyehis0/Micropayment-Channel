@@ -95,7 +95,6 @@
     (ok channel-id)
   )
 )
-
 ;; Deposit additional funds to channel
 (define-public (deposit-to-channel (channel-id uint) (amount uint))
   (let (
