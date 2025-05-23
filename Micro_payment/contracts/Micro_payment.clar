@@ -151,7 +151,6 @@
       (try! (as-contract (stx-transfer? final-balance-b tx-sender (get party-b channel))))
       true
     )
-    
     ;; Mark channel as closed
     (map-set channels
       { channel-id: channel-id }
