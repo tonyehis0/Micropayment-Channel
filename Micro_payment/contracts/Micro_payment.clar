@@ -190,7 +190,6 @@
     (ok true)
   )
 )
-
 ;; Respond to challenge with newer state
 (define-public (challenge-response (channel-id uint) (newer-balance-a uint) (newer-balance-b uint)
                                    (newer-nonce uint) (signature-a (buff 65)) (signature-b (buff 65)))
