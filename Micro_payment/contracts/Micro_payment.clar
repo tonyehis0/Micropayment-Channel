@@ -58,7 +58,6 @@
     (ok (var-get current-block))
   )
 )
-
 ;; Create a new payment channel
 (define-public (create-channel (party-b principal) (initial-deposit-a uint) (initial-deposit-b uint) (timeout uint))
   (let (
