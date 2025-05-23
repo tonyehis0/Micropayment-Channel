@@ -228,7 +228,6 @@
     (asserts! (not (get is-closed channel)) ERR-CHANNEL-CLOSED)
     (asserts! (>= (var-get current-block) 
                   (+ (get challenge-time dispute) (get challenge-period channel))) ERR-TIMEOUT-NOT-REACHED)
-    
     ;; Transfer final balances based on dispute
     (if (> (get new-balance-a dispute) u0)
       (try! (as-contract (stx-transfer? (get new-balance-a dispute) tx-sender (get party-a channel))))
